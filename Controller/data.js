@@ -73,3 +73,88 @@ exports.wilayah = async (req , res , next) => {
 
     res.status(200).json(Data[req.params.name])
 }
+
+
+exports.update = (req , res , next) => {
+
+    if(req.params.wilayah === "lampungBarat"){
+            data.findByIdAndUpdate('61c414a8b1975514d0bcf9b7' , {
+                $set : { 'data.lampungBarat' : {
+                    positif : req.body.positif ,
+                    sembuh : req.body.sembuh ,
+                    meninggal : req.body.meninggal 
+                }}
+            }, 
+            ( err , doc) => {
+                res.status(200).json({'message' : "Data has been updated"})
+            })
+    }else if(req.params.wilayah === "lampungSelatan"){
+        data.findByIdAndUpdate('61c414a8b1975514d0bcf9b7' , {
+            $set : { 'data.lampungSelatan' : {
+                positif : req.body.positif ,
+                sembuh : req.body.sembuh ,
+                meninggal : req.body.meninggal 
+            }}
+        }, 
+        ( err , doc) => {
+            res.status(200).json({'message' : "Data has been updated"})
+        })
+}else if(req.params.wilayah === "lampungUtara"){
+    data.findByIdAndUpdate('61c414a8b1975514d0bcf9b7' , {
+        $set : { 'data.lampungUtara' : {
+            positif : req.body.positif ,
+            sembuh : req.body.sembuh ,
+            meninggal : req.body.meninggal 
+        }}
+    }, 
+    ( err , doc) => {
+        res.status(200).json({'message' : "Data has been updated"})
+    })
+}else if(req.params.wilayah === "lampungTimur"){
+    data.findByIdAndUpdate('61c414a8b1975514d0bcf9b7' , {
+        $set : { 'data.lampungTimur' : {
+            positif : req.body.positif ,
+            sembuh : req.body.sembuh ,
+            meninggal : req.body.meninggal 
+        }}
+    }, 
+    ( err , doc) => {
+        res.status(200).json({'message' : "Data has been updated"})
+    })
+}else if(req.params.wilayah === "mesuji"){
+    data.findByIdAndUpdate('61c414a8b1975514d0bcf9b7' , {
+        $set : { 'data.mesuji' : {
+            positif : req.body.positif ,
+            sembuh : req.body.sembuh ,
+            meninggal : req.body.meninggal 
+        }}
+    }, 
+    ( err , doc) => {
+        res.status(200).json({'message' : "Data has been updated"})
+    })
+}else if(req.params.wilayah === "bandarLampung"){
+    data.findByIdAndUpdate('61c414a8b1975514d0bcf9b7' , {
+        $set : { 'data.bandarLampung' : {
+            positif : req.body.positif ,
+            sembuh : req.body.sembuh ,
+            meninggal : req.body.meninggal 
+        }}
+    }, 
+    ( err , doc) => {
+        res.status(200).json({'message' : "Data has been updated"})
+    })
+}else if(req.params.wilayah === "lampungTengah"){
+    data.findByIdAndUpdate('61c414a8b1975514d0bcf9b7' , {
+        $set : { 'data.lampungTengah' : {
+            positif : req.body.positif ,
+            sembuh : req.body.sembuh ,
+            meninggal : req.body.meninggal 
+        }}
+    }, 
+    ( err , doc) => {
+        res.status(200).json({'message' : "Data has been updated"})
+    })
+}
+
+
+}

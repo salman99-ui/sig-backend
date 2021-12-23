@@ -4,44 +4,44 @@ exports.data = (req , res , next) => {
     const Data = new data({
         data : {
             lampungBarat : {
-                positif : "2922" ,
-                sembuh : "2675" ,
-                meninggal : "138"
+                positif : "122" ,
+                sembuh : "25" ,
+                meninggal : "8"
             } ,
     
             lampungTimur : {
-                positif : "2922" ,
-                sembuh : "2675" ,
-                meninggal : "138"
+                positif : "22" ,
+                sembuh : "265" ,
+                meninggal : "38"
             } ,
     
             lampungSelatan : {
-                positif : "2922" ,
-                sembuh : "2675" ,
-                meninggal : "138"
+                positif : "22" ,
+                sembuh : "25" ,
+                meninggal : "11"
             } ,
     
             lampungUtara : {
-                positif : "2922" ,
-                sembuh : "2675" ,
-                meninggal : "138"
+                positif : "22" ,
+                sembuh : "75" ,
+                meninggal : "28"
             } ,
     
             bandarLampung : {
-                positif : "2922" ,
-                sembuh : "2675" ,
-                meninggal : "138"
+                positif : "2122" ,
+                sembuh : "1129" ,
+                meninggal : "13"
             } ,
     
             mesuji : {
-                positif : "2922" ,
-                sembuh : "2675" ,
+                positif : "122" ,
+                sembuh : "245" ,
                 meninggal : "138"
             } ,
     
             lampungTengah : {
-                positif : "2922" ,
-                sembuh : "2675" ,
+                positif : "92" ,
+                sembuh : "25" ,
                 meninggal : "138"
             }
         }
